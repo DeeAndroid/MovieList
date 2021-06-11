@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <import type="android.view.View"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/moviecard"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+
+
+            <ImageView
+                android:id="@+id/movieposter"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:foreground="#50000000"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/movietitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mountain Landscape"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:elevation="10dp"
+                android:layout_above="@id/layoutBottom"
+                />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 5.5 "
+                android:background="@drawable/rounded_boder"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="top|center_vertical"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:minWidth="50dp"
+                android:textColor="@color/bright_gray"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20sp"
+                android:textSize="20dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/layoutBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_gravity="bottom|center"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/contestcategory"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="1dp"
+
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Photography"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:layout_marginEnd="10dp"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/votes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10d 14h"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10dp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/countrylanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Entries 15+"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:layout_marginEnd="10dp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</layout>

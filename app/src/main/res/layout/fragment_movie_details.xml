@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragments.MovieDetailsFragment">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_back"
+                    android:elevation="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/moviecover"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                   />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 5.5 "
+                    android:background="@drawable/rounded_boder"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="bottom|center_vertical"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:minWidth="50dp"
+                    android:textColor="@color/bright_gray"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20dp"
+                    android:layout_marginEnd="10dp"
+                    />
+                <TextView
+                    android:id="@+id/movietitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+
+                    />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="start"
+                android:textColor="@color/bright_gray"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+
+                />
+            <TextView
+                android:id="@+id/releasedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="start"
+                android:textColor="@color/bright_gray"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_vote"
+                    android:elevation="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/votes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:gravity="start"
+                android:textColor="@color/bright_gray"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textAlignment="textStart"
+
+                />
+            </LinearLayout>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</layout>
